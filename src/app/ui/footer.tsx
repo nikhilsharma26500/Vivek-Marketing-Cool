@@ -5,7 +5,7 @@ import Data from "./data"
 
 const footer = () => {
   return (
-    <div className='w-screen border flex justify-end border-black'>
+    <div className='w-screen border flex items-end bg-[#6c9ae5] text-white'>
       <div className='container mx-auto flex justify-between items-center'>
           <div className='flex items-center gap-4'>
             <Image className='inline-block' src={Logo} width={100} height={100} alt='logo' />

@@ -1,22 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Logo from "../../../public/logo.svg"
 import Data from "./data"
 
 const navbar = () => {
   return (
     <>
-      <div className='w-screen py-5 border border-black'>
+      <div className='w-screen py-5'>
         <div className='container mx-auto flex justify-between items-center'>
           <div className='flex items-center gap-4'>
-            <Image className='inline-block' src={Logo} width={100} height={100} alt='logo' />
-
+            <Link href='/'>
+              <Image className='inline-block' src={Logo} width={100} height={100} alt='logo' />
+            </Link>
             <div className='inline-block'>
               <h1 className=''>
                 Vivek Marketing Cool
               </h1>
               <p>
-                {Data[1].GSTIN}
+                GSTIN: {Data[1].GSTIN}
               </p>
             </div>
           </div>
